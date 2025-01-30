@@ -1,0 +1,14 @@
+Variables:
+- Are made up of letters, numbers and underscores
+- Must begin with a letter or an underscore
+
+CONSTANTS:
+variables whose values should not be changed
+usually capital case
+
+comments:
+#
+
+docstring
+"""....
+"""

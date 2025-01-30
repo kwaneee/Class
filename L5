@@ -1,0 +1,6 @@
+HEADER
+- starts with def
+- ends with a colon (:)
+
+BODY
+- must be indented relative to function header
