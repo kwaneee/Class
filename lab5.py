@@ -183,6 +183,8 @@ def multiply_uniques(a: int, b: int, c: int) -> int:
     if a == b == c:
         product = 1
 
+    product = 1
+    
     if a != b and a!= c:
         product *= a
 
