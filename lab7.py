@@ -154,22 +154,50 @@ def count_evens(lst1: list) -> int:
 # ======================================================
 # Exercise 8
 
-def big_diff(lst: list) -> int:
-    """ Return the difference between the largest and smallest elements in the lsit
+#def big_diff(lst: list) -> int:
+  #  """ Return the difference between the largest and smallest elements in the lsit
     
-    """
+   # """
 
-    smallest = lst[0]
-    largest - lst[0]
+   # smallest = lst[0]
+   # largest - lst[0]
 
-    for i in range(len(lst)):
+  #  for i in range(len(lst)):
 
-        if smallest > lst[i]:
-            smallest = lst[i]
+      #  if smallest < lst[i]:
+       #     smallest = lst[i]
             
-        if largest < lst[i]:
-            largest = lst[i]
+      #  if largest > lst[i]:
+    #        largest = lst[i]
 
+   # return largest - smallest
+
+def big_diff(nums: list[int]) -> int:
+    """
+    Returns the difference between the largest and smallest elements in nums.
+    
+    Preconditions:
+    - len(nums) >= 2 (nums has at least two integers)
+    
+    >>> big_diff([10, 3, 5, 6])
+    7
+    >>> big_diff([1, 2, 3, 4, 5])
+    4
+    >>> big_diff([8, 8, 8, 8])
+    0
+    >>> big_diff([-10, 5, 20, -2])
+    30
+    """
+    
+    smallest = nums[0]
+    largest = nums[0]
+    
+    for num in nums:
+        if num < smallest:
+            smallest = num
+        if num > largest:
+            largest = num
+    
     return largest - smallest
 
 # ======================================================
